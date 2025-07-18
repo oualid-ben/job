@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candidature Oualid - {{Poste}} chez {{Entreprise}}</title>
+    <title>Candidature Oualid - Technical Account Manager chez Diabolocom</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@300;400;500;600;700;800;900&display=swap');
         
@@ -870,8 +870,8 @@
             <div class="hero-content">
                 <h1 class="hero-title">
                     Candidature de <span class="highlight">{{Nom}}</span><br>
-                    au poste de <span class="highlight">{{Poste}}</span><br>
-                    chez <span class="highlight">{{Entreprise}}</span>
+                    au poste de <span class="highlight">Technical Account Manager</span><br>
+                    chez <span class="highlight">Diabolocom</span>
                 </h1>
                 <p class="hero-subtitle">
                     Une approche personnalisée et méthodique pour rejoindre votre équipe d'excellence
@@ -970,13 +970,13 @@
                             </div>
                             <div class="story-item">
                                 <div class="story-period">Aujourd'hui</div>
-                                <div class="story-description">Engagé à faire avancer <strong>{{Entreprise}}</strong> avec détermination.</div>
+                                <div class="story-description">Engagé à faire avancer <strong>Diabolocom</strong> avec détermination.</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <h3 class="skills-title">Ce que je peux apporter à {{Entreprise}}</h3>
+                <h3 class="skills-title">Ce que je peux apporter à Diabolocom</h3>
                 
                 <div class="skills-grid">
                     <div class="skill-card scroll-reveal scroll-reveal-stagger">
@@ -1005,11 +1005,11 @@
             <div class="cta-content">
                 <h2 class="cta-title">Créons ensemble l'avenir</h2>
                 <p class="cta-subtitle">
-                    Je suis convaincu que mon profil peut apporter une réelle valeur ajoutée à {{Entreprise}}
+                    Je suis convaincu que mon profil peut apporter une réelle valeur ajoutée à Diabolocom
                 </p>
                 
                 <div class="cta-buttons">
-                    <a href="mailto:oualidb12@gmail.com?subject=Candidature%20{{Poste}}%20-%20{{Entreprise}}&body=Bonjour%20Oualid,%0D%0A%0D%0AJ'ai%20consulté%20ta%20candidature%20pour%20le%20poste%20{{Poste}}%20chez%20{{Entreprise}} et j'ai adoré, voici mes prochaines disponibilités:%0D%0A%0D%0A" class="btn btn-primary">
+                    <a href="mailto:oualidb12@gmail.com?subject=Candidature%20Technical Account Manager%20-%20Diabolocom&body=Bonjour%20Oualid,%0D%0A%0D%0AJ'ai%20consulté%20ta%20candidature%20pour%20le%20poste%20Technical Account Manager%20chez%20Diabolocom et j'ai adoré, voici mes prochaines disponibilités:%0D%0A%0D%0A" class="btn btn-primary">
                         ✉️ Démarrons la conversation
                     </a>
                     <a href="https://www.canva.com/design/DAGthS5hAxE/RuUSS8RwieY_9H-fTA9WEA/edit?utm_content=DAGthS5hAxE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener" class="btn btn-secondary">
