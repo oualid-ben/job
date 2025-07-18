@@ -1037,7 +1037,7 @@
             TELEPHONE: "+33783978450",
             
             // Informations de candidature
-            POSTE: "{{Poste}}",
+            POSTE: "Technical Account Manager",
             ENTREPRISE: "Diabolocom",
             LOGO_ENTREPRISE: "https://media.licdn.com/dms/image/v2/D4E0BAQEh8fokuZSODA/company-logo_100_100/company-logo_100_100/0/1696247751906/diabolocom_logo?e=1755734400&v=beta&t=ARc8dXtQQ7LaRSUWGiQHI2n-DkD6l_-GIltF0_sQt5g", // URL du logo de l'entreprise
             IMAGE_ENTREPRISE: "{{Entreprise image}}", // URL de l'image business
@@ -1046,7 +1046,7 @@
             PROBLEMATIQUE_1: "Des volumes d’interactions clients trop lourds à gérer manuellement",
             PROBLEMATIQUE_2: "Des agents débordés qui passent du temps sur des tâches répétitives à faible valeur ajoutée",
             PROBLEMATIQUE_3: "Des expériences clients inégales et difficiles à piloter sur plusieurs canaux et outil",
-            SOLUTION: "Diabolocom automatise les tâches répétitives grâce à son IA générative, ce qui permet aux agents de se concentrer sur les demandes complexes et d’offrir un meilleur service. Sa plateforme unifiée centralise tous les canaux (voix, mail, chat, etc.) et s’intègre facilement aux outils CRM existants. Résultat : plus de réactivité, des clients mieux servis, et des équipes plus efficaces dès les premiers jours de déploiement.",
+            SOLUTION: "Diabolocom automatise le traitement des messages vocaux (transcription, résumé, routage), ce qui permet aux agents de gagner 50 % de temps et de se concentrer sur les demandes urgentes. La plateforme s’intègre en quelques jours aux outils comme Salesforce ou Freshdesk pour centraliser toutes les interactions clients sur une seule interface.",
             
             // Liens externes
             LIEN_VIDEO: "https://www.loom.com/share/92e5d6f09ba74a2180bda7fc0266bcd7?sid=386fd4df-fb29-4e1c-ad9c-f84eebe394e3", // Remplacez par votre lien vidéo
