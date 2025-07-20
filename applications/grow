@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candidature Oualid - {{Poste}} chez {{Entreprise}}</title>
+    <title>Candidature Oualid - onsultant Growth Outbound chez Grow</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@300;400;500;600;700;800;900&display=swap');
         
@@ -870,8 +870,8 @@
             <div class="hero-content">
                 <h1 class="hero-title">
                     Candidature de <span class="highlight">Oualid</span><br>
-                    au poste de <span class="highlight">{{Poste}}</span><br>
-                    chez <span class="highlight">{{Entreprise}}</span>
+                    au poste de <span class="highlight">onsultant Growth Outbound</span><br>
+                    chez <span class="highlight">Grow</span>
                 </h1>
                 <p class="hero-subtitle">
                     Une approche personnalisée et méthodique pour rejoindre votre équipe
@@ -918,21 +918,21 @@
             <div class="business-grid">
                 <div class="problem-card scroll-reveal scroll-reveal-stagger">
                     <div class="problem-number">1</div>
-                    <p>{{Problématique1}}</p>
+                    <p>Pas assez de leads qualifiés pour alimenter les commerciaux</p>
                 </div>
                 <div class="problem-card scroll-reveal scroll-reveal-stagger">
                     <div class="problem-number">2</div>
-                    <p>{{Problématique2}}</p>
+                    <p>Taux de conversion trop faible entre les rendez-vous et les ventes</p>
                 </div>
                 <div class="problem-card scroll-reveal scroll-reveal-stagger">
                     <div class="problem-number">3</div>
-                    <p>{{Problématique3}}</p>
+                    <p>Difficulté à recruter rapidement des bons profils commerciaux</p>
                 </div>
             </div>
 
             <h3 class="section-subtitle scroll-reveal">Comment vous transformez ces défis en opportunités</h3>
             <div class="solution-card scroll-reveal">
-                <p>{{Solution}}</p>
+                <p>Grow met en place une machine outbound sur-mesure (email, LinkedIn, call), teste et itère pour générer des leads qualifiés. Ensuite, Grow optimise l’équipe commerciale (coaching, process, outils) et recrute les bons profils en moins de 30 jours.</p>
             </div>
         </div>
     </section>
@@ -970,13 +970,13 @@
                             </div>
                             <div class="story-item">
                                 <div class="story-period">Aujourd'hui</div>
-                                <div class="story-description">Engagé à faire avancer <strong>{{Entreprise}}</strong> avec détermination.</div>
+                                <div class="story-description">Engagé à faire avancer <strong>Grow</strong> avec détermination.</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <h3 class="skills-title">Ce que je peux apporter à {{Entreprise}}</h3>
+                <h3 class="skills-title">Ce que je peux apporter à Grow</h3>
                 
                 <div class="skills-grid">
                     <div class="skill-card scroll-reveal scroll-reveal-stagger">
@@ -1005,11 +1005,11 @@
             <div class="cta-content">
                 <h2 class="cta-title">Créons ensemble l'avenir</h2>
                 <p class="cta-subtitle">
-                    Je suis convaincu que mon profil peut apporter une réelle valeur ajoutée à {{Entreprise}}
+                    Je suis convaincu que mon profil peut apporter une réelle valeur ajoutée à Grow
                 </p>
                 
                 <div class="cta-buttons">
-                    <a href="mailto:oualidb12@gmail.com?subject=Candidature%20{{Poste}}%20-%20{{Entreprise}}&body=Bonjour%20Oualid,%0D%0A%0D%0AJ'ai%20consulté%20ta%20candidature%20pour%20le%20poste%20{{Poste}}%20chez%20{{Entreprise}} et j'ai adoré, voici mes prochaines disponibilités:%0D%0A%0D%0A" class="btn btn-primary">
+                    <a href="mailto:oualidb12@gmail.com?subject=Candidature%20onsultant Growth Outbound%20-%20Grow&body=Bonjour%20Oualid,%0D%0A%0D%0AJ'ai%20consulté%20ta%20candidature%20pour%20le%20poste%20onsultant Growth Outbound%20chez%20Grow et j'ai adoré, voici mes prochaines disponibilités:%0D%0A%0D%0A" class="btn btn-primary">
                         ✉️ Démarrons la conversation
                     </a>
                     <a href="https://www.canva.com/design/DAGthS5hAxE/RuUSS8RwieY_9H-fTA9WEA/edit?utm_content=DAGthS5hAxE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener" class="btn btn-secondary">
@@ -1037,16 +1037,16 @@
             TELEPHONE: "+33783978450",
             
             // Informations de candidature
-            POSTE: "{{Poste}}",
-            ENTREPRISE: "{{Entreprise}}",
-            LOGO_ENTREPRISE: "{{Logo}}", // URL du logo de l'entreprise
+            POSTE: "onsultant Growth Outbound",
+            ENTREPRISE: "Grow",
+            LOGO_ENTREPRISE: "https://static.wixstatic.com/media/7400a4_e90b0aee362040f98e7db9adec807557~mv2.jpg/v1/crop/x_0,y_443,w_2255,h_1195/fill/w_168,h_89,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/SN%20Original.jpg", // URL du logo de l'entreprise
             IMAGE_ENTREPRISE: "{{Entreprise image}}", // URL de l'image business
             
             // Compréhension du business
-            PROBLEMATIQUE_1: "{{Problématique1}}",
-            PROBLEMATIQUE_2: "{{Problématique2}}",
-            PROBLEMATIQUE_3: "{{Problématique3}}",
-            SOLUTION: "{{Solution}}",
+            PROBLEMATIQUE_1: "Pas assez de leads qualifiés pour alimenter les commerciaux",
+            PROBLEMATIQUE_2: "Taux de conversion trop faible entre les rendez-vous et les ventes",
+            PROBLEMATIQUE_3: "Difficulté à recruter rapidement des bons profils commerciaux",
+            SOLUTION: "Grow met en place une machine outbound sur-mesure (email, LinkedIn, call), teste et itère pour générer des leads qualifiés. Ensuite, Grow optimise l’équipe commerciale (coaching, process, outils) et recrute les bons profils en moins de 30 jours.",
             
             // Liens externes
             LIEN_VIDEO: "https://www.loom.com/share/92e5d6f09ba74a2180bda7fc0266bcd7?sid=386fd4df-fb29-4e1c-ad9c-f84eebe394e3", // Remplacez par votre lien vidéo
@@ -1079,7 +1079,7 @@
             
             // Ajouter le logo de l'entreprise
             const logoContainer = document.querySelector('.logo-container');
-            if (logoContainer && VARIABLES.LOGO_ENTREPRISE && VARIABLES.LOGO_ENTREPRISE !== "{{Logo}}") {
+            if (logoContainer && VARIABLES.LOGO_ENTREPRISE && VARIABLES.LOGO_ENTREPRISE !== "https://static.wixstatic.com/media/7400a4_e90b0aee362040f98e7db9adec807557~mv2.jpg/v1/crop/x_0,y_443,w_2255,h_1195/fill/w_168,h_89,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/SN%20Original.jpg") {
                 logoContainer.innerHTML = `<img src="${VARIABLES.LOGO_ENTREPRISE}" alt="Logo ${VARIABLES.ENTREPRISE}" class="company-logo">`;
             }
             
