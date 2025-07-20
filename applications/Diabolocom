@@ -912,7 +912,7 @@
                 <div class="business-image"></div>
             </div>
             
-            <h3 class="section-subtitle scroll-reveal">Les problématiques que vous résolvez pour vos clients: {{Centres de contact B2B}}</h3>
+            <h3 class="section-subtitle scroll-reveal">Les problématiques que vous résolvez pour vos clients: Centres de contact B2B</h3>
             
             <div class="business-grid">
                 <div class="problem-card scroll-reveal scroll-reveal-stagger">
