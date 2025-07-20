@@ -912,7 +912,7 @@
                 <div class="business-image"></div>
             </div>
             
-            <h3 class="section-subtitle scroll-reveal">Les problématiques que vous résolvez pour vos clients: Centres de contact B2B</h3>
+            <h3 class="section-subtitle scroll-reveal">Les problématiques que vous résolvez pour vos clients</h3>
             
             <div class="business-grid">
                 <div class="problem-card scroll-reveal scroll-reveal-stagger">
@@ -1040,7 +1040,6 @@
             ENTREPRISE: "Diabolocom",
             LOGO_ENTREPRISE: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsnKltSNVtsiGY6ZC0Df8jw4fgHgrEn26X1g&s", // URL du logo de l'entreprise
             IMAGE_ENTREPRISE: "{{Entreprise image}}", // URL de l'image business
-            Ideal Customer Profil: "Centres de contact B2B"
             
             // Compréhension du business
             PROBLEMATIQUE_1: "Trop d’interactions clients à traiter, pas assez de productivité.",
