@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candidature Oualid - onsultant Growth Outbound chez Grow</title>
+    <title>Candidature Oualid - Consultant Growth Outbound chez Grow</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@300;400;500;600;700;800;900&display=swap');
         
@@ -870,7 +870,7 @@
             <div class="hero-content">
                 <h1 class="hero-title">
                     Candidature de <span class="highlight">Oualid</span><br>
-                    au poste de <span class="highlight">onsultant Growth Outbound</span><br>
+                    au poste de <span class="highlight">Consultant Growth Outbound</span><br>
                     chez <span class="highlight">Grow</span>
                 </h1>
                 <p class="hero-subtitle">
@@ -1009,7 +1009,7 @@
                 </p>
                 
                 <div class="cta-buttons">
-                    <a href="mailto:oualidb12@gmail.com?subject=Candidature%20onsultant Growth Outbound%20-%20Grow&body=Bonjour%20Oualid,%0D%0A%0D%0AJ'ai%20consulté%20ta%20candidature%20pour%20le%20poste%20onsultant Growth Outbound%20chez%20Grow et j'ai adoré, voici mes prochaines disponibilités:%0D%0A%0D%0A" class="btn btn-primary">
+                    <a href="mailto:oualidb12@gmail.com?subject=Candidature%20Consultant Growth Outbound%20-%20Grow&body=Bonjour%20Oualid,%0D%0A%0D%0AJ'ai%20consulté%20ta%20candidature%20pour%20le%20poste%20Consultant Growth Outbound%20chez%20Grow et j'ai adoré, voici mes prochaines disponibilités:%0D%0A%0D%0A" class="btn btn-primary">
                         ✉️ Démarrons la conversation
                     </a>
                     <a href="https://www.canva.com/design/DAGthS5hAxE/RuUSS8RwieY_9H-fTA9WEA/edit?utm_content=DAGthS5hAxE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener" class="btn btn-secondary">
@@ -1037,7 +1037,7 @@
             TELEPHONE: "+33783978450",
             
             // Informations de candidature
-            POSTE: "onsultant Growth Outbound",
+            POSTE: "Consultant Growth Outbound",
             ENTREPRISE: "Grow",
             LOGO_ENTREPRISE: "https://static.wixstatic.com/media/7400a4_e90b0aee362040f98e7db9adec807557~mv2.jpg/v1/crop/x_0,y_443,w_2255,h_1195/fill/w_168,h_89,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/SN%20Original.jpg", // URL du logo de l'entreprise
             IMAGE_ENTREPRISE: "{{Entreprise image}}", // URL de l'image business
