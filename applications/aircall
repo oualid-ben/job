@@ -932,7 +932,7 @@
 
             <h3 class="section-subtitle scroll-reveal">Comment vous transformez ces défis en opportunités</h3>
             <div class="solution-card scroll-reveal">
-                <p>{{Solution}}</p>
+                <p>Aircall centralise tous les canaux de communication (appels, SMS, WhatsApp) dans une plateforme unique, reliée aux principaux CRM. L’IA prend en charge les appels simples, assiste les équipes en temps réel, et génère des analyses automatiques. Résultat : moins de tâches manuelles, plus de contexte, un meilleur suivi client, et des performances mesurables.</p>
             </div>
         </div>
     </section>
@@ -1046,7 +1046,7 @@
             PROBLEMATIQUE_1: "Les équipes passent trop de temps à répondre aux mêmes questions ou à transférer les appels",
             PROBLEMATIQUE_2: "Les clients doivent souvent se répéter car les infos sont éparpillées entre plusieurs outils",
             PROBLEMATIQUE_3: "Les managers n’ont pas de vue claire sur ce qui se passe dans les appels (qualité, ressenti, points d’amélioration)",
-            SOLUTION: "{{Solution}}",
+            SOLUTION: "Aircall centralise tous les canaux de communication (appels, SMS, WhatsApp) dans une plateforme unique, reliée aux principaux CRM. L’IA prend en charge les appels simples, assiste les équipes en temps réel, et génère des analyses automatiques. Résultat : moins de tâches manuelles, plus de contexte, un meilleur suivi client, et des performances mesurables.",
             
             // Liens externes
             LIEN_VIDEO: "https://www.loom.com/share/92e5d6f09ba74a2180bda7fc0266bcd7?sid=386fd4df-fb29-4e1c-ad9c-f84eebe394e3", // Remplacez par votre lien vidéo
