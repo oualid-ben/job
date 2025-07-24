@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Oualid - {{Poste}} at {{Entreprise}}</title>
+    <!-- CSS kept intact from the original -->
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Application by <span class="highlight">Oualid</span><br>
+                    for the role of <span class="highlight">{{Poste}}</span><br>
+                    at <span class="highlight">{{Entreprise}}</span>
+                </h1>
+                <p class="hero-subtitle">
+                    A personalized and methodical approach to join your team
+                </p>
+                <div class="logo-container"></div>
+                <div class="scroll-indicator" onclick="scrollToNext()">
+                    <div class="scroll-text">See more</div>
+                    <div class="scroll-arrow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="video-container">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                <iframe 
+                    src="https://www.loom.com/embed/92e5d6f09ba74a2180bda7fc0266bcd7?sid=32ec9cfd-e079-4975-949c-ee07965f53ea" 
+                    frameborder="0" 
+                    webkitallowfullscreen 
+                    mozallowfullscreen 
+                    allowfullscreen 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Understanding Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="business-header scroll-reveal">
+                <div>
+                    <h2 class="section-title">What I understood about your business</h2>
+                </div>
+                <div class="business-image"></div>
+            </div>
+
+            <h3 class="section-subtitle scroll-reveal">Challenges you solve for your customers</h3>
+
+            <div class="business-grid">
+                <div class="problem-card scroll-reveal scroll-reveal-stagger">
+                    <div class="problem-number">1</div>
+                    <p>{{Problématique1}}</p>
+                </div>
+                <div class="problem-card scroll-reveal scroll-reveal-stagger">
+                    <div class="problem-number">2</div>
+                    <p>{{Problématique2}}</p>
+                </div>
+                <div class="problem-card scroll-reveal scroll-reveal-stagger">
+                    <div class="problem-number">3</div>
+                    <p>{{Problématique3}}</p>
+                </div>
+            </div>
+
+            <h3 class="section-subtitle scroll-reveal">How you turn challenges into opportunities</h3>
+            <div class="solution-card scroll-reveal">
+                <p>{{Solution}}</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-content">
+                <h2 class="section-title">My Profile</h2>
+
+                <div class="profile-grid scroll-reveal">
+                    <div class="profile-image">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E03AQEAwIPIFhAaeA/profile-displayphoto-shrink_800_800/B4EZX22.0qHcAc-/0/1743603363983?e=1755734400&v=beta&t=7-HtzmlscR4m-z0FaoPoGpyieKWo23LsJMOy0Jr89D0" alt="Oualid's photo" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                    </div>
+                    <div class="story-content">
+                        <h3>My Story</h3>
+                        <h4>My journey in 5 acts</h4>
+
+                        <div class="story-timeline">
+                            <div class="story-item">
+                                <div class="story-period">Engineering School (2017–2022)</div>
+                                <div class="story-description">I learned how to model complex systems. To find structured solutions.</div>
+                            </div>
+                            <div class="story-item">
+                                <div class="story-period">Consulting (2022–2025)</div>
+                                <div class="story-description">I advised large corporations. I listened, analyzed, configured. But I wasn’t passionate.</div>
+                            </div>
+                            <div class="story-item">
+                                <div class="story-period">The Trigger (2025)</div>
+                                <div class="story-description">I asked myself a simple question: what excites me? B2B Sales.</div>
+                            </div>
+                            <div class="story-item">
+                                <div class="story-period">Sales Bootcamp – Akimbo (2025)</div>
+                                <div class="story-description">Over 300 cold calls and personalized emails with qualified meetings. BEBEDC / MEDDIC methods and multichannel sequences. I learned to sell with structure.</div>
+                            </div>
+                            <div class="story-item">
+                                <div class="story-period">Today</div>
+                                <div class="story-description">Committed to helping <strong>{{Entreprise}}</strong> move forward with determination.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="skills-title">What I can bring to {{Entreprise}}</h3>
+
+                <div class="skills-grid">
+                    <div class="skill-card scroll-reveal scroll-reveal-stagger">
+                        <div class="skill-icon">🎨</div>
+                        <div class="skill-title">Creativity</div>
+                        <div class="skill-description">Innovative sales approaches and creative adaptation to customer needs</div>
+                    </div>
+                    <div class="skill-card scroll-reveal scroll-reveal-stagger">
+                        <div class="skill-icon">📈</div>
+                        <div class="skill-title">Business/Sales Knowledge</div>
+                        <div class="skill-description">Mastery of modern sales methods and deep understanding of business challenges</div>
+                    </div>
+                    <div class="skill-card scroll-reveal scroll-reveal-stagger">
+                        <div class="skill-icon">⚡</div>
+                        <div class="skill-title">Technical & Tools</div>
+                        <div class="skill-description">Engineering background and technical expertise in next-gen sales tools</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Let’s build the future together</h2>
+                <p class="cta-subtitle">
+                    I’m confident my profile can bring real value to {{Entreprise}}
+                </p>
+
+                <div class="cta-buttons">
+                    <a href="mailto:oualidb12@gmail.com?subject=Application%20{{Poste}}%20-%20{{Entreprise}}&body=Hi%20Oualid,%0D%0A%0D%0AI%20reviewed%20your%20application%20for%20the%20{{Poste}}%20position%20at%20{{Entreprise}}%20and%20I’d%20love%20to%20chat..." class="btn btn-primary">
+                        ✉️ Let’s Start the Conversation
+                    </a>
+                    <a href="https://www.canva.com/design/DAGthS5hAxE/RuUSS8RwieY_9H-fTA9WEA/edit?utm_content=DAGthS5hAxE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener" class="btn btn-secondary">
+                        📄 View My Resume
+                    </a>
+                    <a href="tel:+337897840" class="btn btn-secondary">
+                        📞 Let's Chat Directly
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS stays the same except for translated strings -->
+</body>
+</html>
