@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candidature Oualid - {{Poste}} chez {{Entreprise}}</title>
+    <title>Oualid’s Application - Business Development Representative Position at Databricks</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@300;400;500;600;700;800;900&display=swap');
         
@@ -869,18 +869,18 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    Candidature de <span class="highlight">Oualid</span><br>
-                    au poste de <span class="highlight">{{Poste}}</span><br>
-                    chez <span class="highlight">{{Entreprise}}</span>
+                    Oualid's <span class="highlight">application</span><br>
+                    for the position of <span class="highlight">Business Development Representative</span><br>
+                    at <span class="highlight">Databricks</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Une approche personnalisée et méthodique pour rejoindre votre équipe
+                    A personalized and methodical approach to apply
                 </p>
                 <div class="logo-container"></div>
                 
                 <!-- Scroll Indicator -->
                 <div class="scroll-indicator" onclick="scrollToNext()">
-                    <div class="scroll-text">Découvrez la suite</div>
+                    <div class="scroll-text">Learn more below</div>
                     <div class="scroll-arrow"></div>
                 </div>
             </div>
@@ -903,36 +903,37 @@
         </div>
     </section>
 
+
     <!-- Business Understanding Section -->
     <section class="section section-alt">
         <div class="container">
             <div class="business-header scroll-reveal">
                 <div>
-                    <h2 class="section-title">CE que j'ai compris de votre business</h2>
+                    <h2 class="section-title">What I understood about your business</h2>
                 </div>
                 <div class="business-image"></div>
             </div>
             
-            <h3 class="section-subtitle scroll-reveal">Les problématiques que vous résolvez pour vos clients</h3>
+            <h3 class="section-subtitle scroll-reveal">Challenges you solve for your customers</h3>
             
             <div class="business-grid">
                 <div class="problem-card scroll-reveal scroll-reveal-stagger">
                     <div class="problem-number">1</div>
-                    <p>{{Problématique1}}</p>
+                    <p>Data is scattered and hard to use across teams.</p>
                 </div>
                 <div class="problem-card scroll-reveal scroll-reveal-stagger">
                     <div class="problem-number">2</div>
-                    <p>{{Problématique2}}</p>
+                    <p>AI and analytics projects take too long to deliver results.</p>
                 </div>
                 <div class="problem-card scroll-reveal scroll-reveal-stagger">
                     <div class="problem-number">3</div>
-                    <p>{{Problématique3}}</p>
+                    <p>Companies struggle to turn raw data into clear business impact.</p>
                 </div>
             </div>
 
-            <h3 class="section-subtitle scroll-reveal">Comment vous transformez ces défis en opportunités</h3>
+            <h3 class="section-subtitle scroll-reveal">How you solve those challenges</h3>
             <div class="solution-card scroll-reveal">
-                <p>{{Solution}}</p>
+                <p>Databricks offers a unified platform where data, analytics, and AI all live in one place. It connects data from everywhere, makes it usable fast, and lets teams build real-time insights and AI models that actually scale. No more silos, delays, or tech headaches, just one powerful tool to move from data to decisions, fast.</p>
             </div>
         </div>
     </section>
@@ -941,58 +942,58 @@
     <section class="profile-section">
         <div class="container">
             <div class="profile-content">
-                <h2 class="section-title">Mon profil</h2>
+                <h2 class="section-title">My Profile</h2>
                 
                 <div class="profile-grid scroll-reveal">
                     <div class="profile-image">
                      <img src="https://media.licdn.com/dms/image/v2/D4E03AQEAwIPIFhAaeA/profile-displayphoto-shrink_800_800/B4EZX22.0qHcAc-/0/1743603363983?e=1755734400&v=beta&t=7-HtzmlscR4m-z0FaoPoGpyieKWo23LsJMOy0Jr89D0" alt="Photo de Oualid" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
                    </div>
                     <div class="story-content">
-                        <h3>Mon histoire</h3>
-                        <h4>Mon parcours en 5 actes</h4>
+                        <h3>My Story</h3>
+                        <h4>My journey in 5 acts</h4>
                         
                         <div class="story-timeline">
                             <div class="story-item">
-                                <div class="story-period">École d'ingénieur (2017–2022)</div>
-                                <div class="story-description">J'ai appris à modéliser des systèmes complexes. À chercher des solutions structurées.</div>
+                                <div class="story-period">Engineering School (2017–2022)</div>
+                                <div class="story-description">I learned how to model complex systems. To find structured solutions.</div>
                             </div>
                             <div class="story-item">
                                 <div class="story-period">Consulting (2022–2025)</div>
-                                <div class="story-description">J'ai conseillé de grands groupes. Écouté, analysé, configuré. Mais je ne vibrais pas.</div>
+                                <div class="story-description">I advised large corporations. I listened, analyzed, configured. But I wasn’t passionate.</div>
                             </div>
                             <div class="story-item">
-                                <div class="story-period">Le déclic (2025)</div>
-                                <div class="story-description">Je me suis posé une question simple : qu'est-ce qui me fait vibrer ? La vente B2B.</div>
+                                <div class="story-period">The Trigger (2025)</div>
+                                <div class="story-description">I asked myself a simple question: what excites me? B2B Sales.</div>
                             </div>
                             <div class="story-item">
                                 <div class="story-period">Sales Bootcamp – Akimbo (2025)</div>
-                                <div class="story-description">Plus de 300 appels à froid et emails personnalisés avec des RDVs qualifiés. Méthodes BEBEDC / MEDDIC et séquences multicanales. J'ai appris à vendre avec méthode.</div>
+                                <div class="story-description">Over 300 cold calls and personalized emails with qualified meetings. BEBEDC / MEDDIC methods and multichannel sequences. I learned to sell with structure.</div>
                             </div>
                             <div class="story-item">
-                                <div class="story-period">Aujourd'hui</div>
-                                <div class="story-description">Engagé à faire avancer <strong>{{Entreprise}}</strong> avec détermination.</div>
+                                <div class="story-period">Today</div>
+                                <div class="story-description">Committed to help <strong>Databricks</strong> move forward with determination.</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <h3 class="skills-title">Ce que je peux apporter à {{Entreprise}}</h3>
-                
+                <h3 class="skills-title">What I can bring to Databricks</h3>
+
                 <div class="skills-grid">
                     <div class="skill-card scroll-reveal scroll-reveal-stagger">
                         <div class="skill-icon">🎨</div>
-                        <div class="skill-title">Créativité</div>
-                        <div class="skill-description">Innovation dans l'approche commerciale et adaptation créative aux besoins clients</div>
+                        <div class="skill-title">Creativity</div>
+                        <div class="skill-description">Innovative sales approaches and creative adaptation to customer needs</div>
                     </div>
                     <div class="skill-card scroll-reveal scroll-reveal-stagger">
                         <div class="skill-icon">📈</div>
                         <div class="skill-title">Business/Sales Knowledge</div>
-                        <div class="skill-description">Maîtrise des méthodes de vente modernes et compréhension approfondie des enjeux business</div>
+                        <div class="skill-description">Solid grasp of modern sales methods and strong business awareness</div>
                     </div>
                     <div class="skill-card scroll-reveal scroll-reveal-stagger">
                         <div class="skill-icon">⚡</div>
-                        <div class="skill-title">Technique & Outils</div>
-                        <div class="skill-description">Formation ingénieur et expertise technique des outils commerciaux de nouvelle génération</div>
+                        <div class="skill-title">Technical & Tools</div>
+                        <div class="skill-description">Engineering background and technical expertise in next-gen sales tools</div>
                     </div>
                 </div>
             </div>
@@ -1003,20 +1004,20 @@
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2 class="cta-title">Créons ensemble l'avenir</h2>
+                <h2 class="cta-title">Let’s build the future together</h2>
                 <p class="cta-subtitle">
-                    Je suis convaincu que mon profil peut apporter une réelle valeur ajoutée à {{Entreprise}}
+                    I’m confident my profile can bring real value to Databricks
                 </p>
                 
                 <div class="cta-buttons">
-                    <a href="mailto:oualidb12@gmail.com?subject=Candidature%20{{Poste}}%20-%20{{Entreprise}}&body=Bonjour%20Oualid,%0D%0A%0D%0AJ'ai%20consulté%20ta%20candidature%20pour%20le%20poste%20{{Poste}}%20chez%20{{Entreprise}} et j'ai adoré, voici mes prochaines disponibilités:%0D%0A%0D%0A" class="btn btn-primary">
-                        ✉️ Démarrons la conversation
+                    <a href="mailto:oualidb12@gmail.com?subject=Oualid's%20application%20for%20Business Development Representative%20at%20Databricks&body=Hi%20Oualid,%0D%0A%0D%0AI%20reviewed%20your%20application%20for%20the%20Business Development Representative%20position%20at%20Databricks%20and%20really%20liked%20it.%20Here%20are%20my%20availabilities:%0D%0A%0D%0A" class="btn btn-primary">
+                        ✉️ Let’s Start a Conversation
                     </a>
-                    <a href="https://www.canva.com/design/DAGthS5hAxE/RuUSS8RwieY_9H-fTA9WEA/edit?utm_content=DAGthS5hAxE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener" class="btn btn-secondary">
-                        📄 Voir mon CV
+                    <a href="https://www.canva.com/design/DAGuE37sN1I/-hIYsVTJ6Gi2u96YYkQRZQ/edit?utm_content=DAGuE37sN1I&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener" class="btn btn-secondary">
+                        📄 View My Resume
                     </a>
                     <a href="tel:+337897840" class="btn btn-secondary">
-                        📞 Échangeons directement
+                        📞 Let's Chat Directly
                     </a>
                 </div>
             </div>
@@ -1037,20 +1038,20 @@
             TELEPHONE: "+33783978450",
             
             // Informations de candidature
-            POSTE: "{{Poste}}",
-            ENTREPRISE: "{{Entreprise}}",
-            LOGO_ENTREPRISE: "{{Logo}}", // URL du logo de l'entreprise
+            POSTE: "Business Development Representative",
+            ENTREPRISE: "Databricks",
+            LOGO_ENTREPRISE: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS36Vt4wSXF8AZGnryASm-iL1f71ucL1f9pjg&s", // URL du logo de l'entreprise
             IMAGE_ENTREPRISE: "{{Entreprise image}}", // URL de l'image business
             
             // Compréhension du business
-            PROBLEMATIQUE_1: "{{Problématique1}}",
-            PROBLEMATIQUE_2: "{{Problématique2}}",
-            PROBLEMATIQUE_3: "{{Problématique3}}",
-            SOLUTION: "{{Solution}}",
+            PROBLEMATIQUE_1: "Data is scattered and hard to use across teams.",
+            PROBLEMATIQUE_2: "AI and analytics projects take too long to deliver results.",
+            PROBLEMATIQUE_3: "Companies struggle to turn raw data into clear business impact.",
+            SOLUTION: "Databricks offers a unified platform where data, analytics, and AI all live in one place. It connects data from everywhere, makes it usable fast, and lets teams build real-time insights and AI models that actually scale. No more silos, delays, or tech headaches, just one powerful tool to move from data to decisions, fast.",
             
             // Liens externes
             LIEN_VIDEO: "https://www.loom.com/share/92e5d6f09ba74a2180bda7fc0266bcd7?sid=386fd4df-fb29-4e1c-ad9c-f84eebe394e3", // Remplacez par votre lien vidéo
-            LIEN_CV: "https://www.canva.com/design/DAGthS5hAxE/RuUSS8RwieY_9H-fTA9WEA/edit?utm_content=DAGthS5hAxE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" // Remplacez par votre lien CV
+            LIEN_CV: "https://www.canva.com/design/DAGuE37sN1I/-hIYsVTJ6Gi2u96YYkQRZQ/edit?utm_content=DAGuE37sN1I&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" // Remplacez par votre lien CV
         };
         
         // ==========================================
@@ -1060,26 +1061,25 @@
         // Fonction pour remplacer les variables dans le HTML
         function initializeVariables() {
             // Remplacer le titre principal
-            document.title = `Candidature ${VARIABLES.NOM} - ${VARIABLES.POSTE} chez ${VARIABLES.ENTREPRISE}`;
+            document.title = `${VARIABLES.NOM}'s application - ${VARIABLES.POSTE} at ${VARIABLES.ENTREPRISE}`;
             
             // Remplacer dans le hero
             const heroTitle = document.querySelector('.hero-title');
             if (heroTitle) {
                 heroTitle.innerHTML = `
-                    Candidature de <span class="highlight">${VARIABLES.NOM}</span><br>
-                    pour le poste <span class="highlight">${VARIABLES.POSTE}</span><br>
-                    chez <span class="highlight">${VARIABLES.ENTREPRISE}</span>
-                `;
+                    <span class="highlight">${VARIABLES.NOM}</span>'s <span class="highlight">application</span><br>
+                    for the position of <span class="highlight">${VARIABLES.POSTE}</span><br>at <span class="highlight">${VARIABLES.ENTREPRISE}</span>
+            `;
             }
             
             const heroSubtitle = document.querySelector('.hero-subtitle');
             if (heroSubtitle) {
-                heroSubtitle.innerHTML = `Une approche personnalisée et méthodique pour rejoindre votre équipe`;
+                heroSubtitle.innerHTML = `A personalized and methodical approach to apply`;
             }
             
             // Ajouter le logo de l'entreprise
             const logoContainer = document.querySelector('.logo-container');
-            if (logoContainer && VARIABLES.LOGO_ENTREPRISE && VARIABLES.LOGO_ENTREPRISE !== "{{Logo}}") {
+            if (logoContainer && VARIABLES.LOGO_ENTREPRISE && VARIABLES.LOGO_ENTREPRISE !== "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS36Vt4wSXF8AZGnryASm-iL1f71ucL1f9pjg&s") {
                 logoContainer.innerHTML = `<img src="${VARIABLES.LOGO_ENTREPRISE}" alt="Logo ${VARIABLES.ENTREPRISE}" class="company-logo">`;
             }
             
@@ -1115,7 +1115,7 @@
             // Remplacer dans les skills
             const skillsTitle = document.querySelector('.skills-title');
             if (skillsTitle) {
-                skillsTitle.innerHTML = `Ce que je peux apporter à ${VARIABLES.ENTREPRISE}`;
+                skillsTitle.innerHTML = `What I can bring to ${VARIABLES.ENTREPRISE}`;
             }
             
             // Remplacer dans la CTA
@@ -1127,7 +1127,8 @@
             // Remplacer les liens
             const emailLink = document.querySelector('a[href^="mailto"]');
             if (emailLink) {
-                emailLink.href = `mailto:${VARIABLES.EMAIL}?subject=Candidature%20${VARIABLES.POSTE}%20-%20${VARIABLES.ENTREPRISE}&body=Bonjour%20${VARIABLES.NOM},%0D%0A%0D%0AJ'ai%20consulté%20votre%20candidature%20pour%20le%20poste%20${VARIABLES.POSTE}%20chez%20${VARIABLES.ENTREPRISE}.%0D%0A%0D%0A`;
+                emailLink.href = `mailto:${VARIABLES.EMAIL}?subject=${VARIABLES.NOM}'s%20application%20for%20${VARIABLES.POSTE}%20at%20${VARIABLES.ENTREPRISE}&body=Hi%20${VARIABLES.NOM},%0D%0A%0D%0AI%20reviewed%20your%20application%20for%20the%20${VARIABLES.POSTE}%20position%20at%20${VARIABLES.ENTREPRISE}.%0D%0A%0D%0A`;
+
             }
             
             const phoneLink = document.querySelector('a[href^="tel"]');
