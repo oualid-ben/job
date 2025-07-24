@@ -880,7 +880,7 @@
                 
                 <!-- Scroll Indicator -->
                 <div class="scroll-indicator" onclick="scrollToNext()">
-                    <div class="scroll-text">Découvrez la suite</div>
+                    <div class="scroll-text">Learn more below</div>
                     <div class="scroll-arrow"></div>
                 </div>
             </div>
@@ -902,6 +902,7 @@
           </div>
         </div>
     </section>
+
 
     <!-- Business Understanding Section -->
     <section class="section section-alt">
@@ -987,7 +988,7 @@
                     <div class="skill-card scroll-reveal scroll-reveal-stagger">
                         <div class="skill-icon">📈</div>
                         <div class="skill-title">Business/Sales Knowledge</div>
-                        <div class="skill-description">Mastery of modern sales methods and deep understanding of business challenges</div>
+                        <div class="skill-description">Solid grasp of modern sales methods and strong business awareness</div>
                     </div>
                     <div class="skill-card scroll-reveal scroll-reveal-stagger">
                         <div class="skill-icon">⚡</div>
@@ -1009,7 +1010,7 @@
                 </p>
                 
                 <div class="cta-buttons">
-                    <a href="mailto:oualidb12@gmail.com?subject=Candidature%20{{Poste}}%20-%20{{Entreprise}}&body=Bonjour%20Oualid,%0D%0A%0D%0AJ'ai%20consulté%20ta%20candidature%20pour%20le%20poste%20{{Poste}}%20chez%20{{Entreprise}} et j'ai adoré, voici mes prochaines disponibilités:%0D%0A%0D%0A" class="btn btn-primary">
+                    <a href="mailto:oualidb12@gmail.com?subject=Oualid's%20application%20for%20{{Poste}}%20at%20{{Entreprise}}&body=Hi%20Oualid,%0D%0A%0D%0AI%20reviewed%20your%20application%20for%20the%20{{Poste}}%20position%20at%20{{Entreprise}}%20and%20really%20liked%20it.%20Here%20are%20my%20availabilities:%0D%0A%0D%0A" class="btn btn-primary">
                         ✉️ Let’s Start a Conversation
                     </a>
                     <a href="https://www.canva.com/design/DAGthS5hAxE/RuUSS8RwieY_9H-fTA9WEA/edit?utm_content=DAGthS5hAxE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener" class="btn btn-secondary">
@@ -1060,21 +1061,20 @@
         // Fonction pour remplacer les variables dans le HTML
         function initializeVariables() {
             // Remplacer le titre principal
-            document.title = `Candidature ${VARIABLES.NOM} - ${VARIABLES.POSTE} chez ${VARIABLES.ENTREPRISE}`;
+            document.title = `${VARIABLES.NOM}'s application - ${VARIABLES.POSTE} at ${VARIABLES.ENTREPRISE}`;
             
             // Remplacer dans le hero
             const heroTitle = document.querySelector('.hero-title');
             if (heroTitle) {
                 heroTitle.innerHTML = `
-                    Candidature de <span class="highlight">${VARIABLES.NOM}</span><br>
-                    pour le poste <span class="highlight">${VARIABLES.POSTE}</span><br>
-                    chez <span class="highlight">${VARIABLES.ENTREPRISE}</span>
-                `;
+                    <span class="highlight">${VARIABLES.NOM}</span>'s <span class="highlight">application</span><br>
+                    for the position of <span class="highlight">${VARIABLES.POSTE}</span><br>at <span class="highlight">${VARIABLES.ENTREPRISE}</span>
+            `;
             }
             
             const heroSubtitle = document.querySelector('.hero-subtitle');
             if (heroSubtitle) {
-                heroSubtitle.innerHTML = `Une approche personnalisée et méthodique pour rejoindre votre équipe`;
+                heroSubtitle.innerHTML = `A personalized and methodical approach to apply`;
             }
             
             // Ajouter le logo de l'entreprise
@@ -1115,7 +1115,7 @@
             // Remplacer dans les skills
             const skillsTitle = document.querySelector('.skills-title');
             if (skillsTitle) {
-                skillsTitle.innerHTML = `Ce que je peux apporter à ${VARIABLES.ENTREPRISE}`;
+                skillsTitle.innerHTML = `What I can bring to ${VARIABLES.ENTREPRISE}`;
             }
             
             // Remplacer dans la CTA
@@ -1127,7 +1127,8 @@
             // Remplacer les liens
             const emailLink = document.querySelector('a[href^="mailto"]');
             if (emailLink) {
-                emailLink.href = `mailto:${VARIABLES.EMAIL}?subject=Candidature%20${VARIABLES.POSTE}%20-%20${VARIABLES.ENTREPRISE}&body=Bonjour%20${VARIABLES.NOM},%0D%0A%0D%0AJ'ai%20consulté%20votre%20candidature%20pour%20le%20poste%20${VARIABLES.POSTE}%20chez%20${VARIABLES.ENTREPRISE}.%0D%0A%0D%0A`;
+                emailLink.href = `mailto:${VARIABLES.EMAIL}?subject=${VARIABLES.NOM}'s%20application%20for%20${VARIABLES.POSTE}%20at%20${VARIABLES.ENTREPRISE}&body=Hi%20${VARIABLES.NOM},%0D%0A%0D%0AI%20reviewed%20your%20application%20for%20the%20${VARIABLES.POSTE}%20position%20at%20${VARIABLES.ENTREPRISE}.%0D%0A%0D%0A`;
+
             }
             
             const phoneLink = document.querySelector('a[href^="tel"]');
