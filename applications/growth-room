@@ -874,7 +874,7 @@
                     chez <span class="highlight">Growth Room</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Une approche personnalisée et méthodique pour rejoindre votre équipe
+                    Une approche personnalisée et méthodique pour postuler
                 </p>
                 <div class="logo-container"></div>
                 
@@ -1074,7 +1074,7 @@
             
             const heroSubtitle = document.querySelector('.hero-subtitle');
             if (heroSubtitle) {
-                heroSubtitle.innerHTML = `Une approche personnalisée et méthodique pour rejoindre votre équipe`;
+                heroSubtitle.innerHTML = `Une approche personnalisée et méthodique pour postuler`;
             }
             
             // Ajouter le logo de l'entreprise
