@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oualid’s Application - Business Development Representative Position at Shippypro</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@300;400;500;600;700;800;900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a1a1a;
+            --secondary: #2a2a2a;
+            --accent: #6366f1;
+            --accent-light: #8b5cf6;
+            --accent-dark: #4f46e5;
+            --platinum: #e5e4e2;
+            --silver: #c7c7c7;
+            --charcoal: #36454f;
+            --smoke: #f8fafc;
+            --pearl: #ffffff;
+            --obsidian: #0c0c0c;
+            --gradient-luxury: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #36454f 100%);
+            --gradient-accent: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --gradient-silver: linear-gradient(135deg, #e5e4e2 0%, #c7c7c7 100%);
+            --text-primary: #1a1a1a;
+            --text-secondary: #6b7280;
+            --text-light: #9ca3af;
+            --glass: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --shadow-luxury: 0 25px 50px rgba(0, 0, 0, 0.15);
+            --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--smoke);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+            font-weight: 400;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: var(--gradient-luxury);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.02) 0%, transparent 50%);
+            animation: float 30s ease-in-out infinite;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            opacity: 0;
+            animation: fadeInUp 1.2s ease-out 0.5s forwards;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            top: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out 2s forwards;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 10;
+        }
+
+        .scroll-indicator:hover {
+            transform: translateX(-50%) scale(1.1);
+        }
+
+        .scroll-text {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--platinum);
+            opacity: 0.8;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .scroll-arrow {
+            width: 4px;
+            height: 4rem;
+            background: linear-gradient(to bottom, var(--accent), transparent);
+            position: relative;
+            border-radius: 2px;
+        }
+
+        .scroll-arrow::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 15px solid var(--accent);
+            animation: floatArrow 2s ease-in-out infinite;
+        }
+
+        @keyframes floatArrow {
+            0%, 100% { 
+                transform: translateX(-50%) translateY(0px);
+                opacity: 1;
+            }
+            50% { 
+                transform: translateX(-50%) translateY(10px);
+                opacity: 0.6;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50%) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 7vw, 5rem);
+            font-weight: 800;
+            color: white;
+            margin-bottom: 2rem;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+            color: var(--platinum);
+            font-weight: 300;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+
+        /* Logo Section */
+        .logo-container {
+            margin-top: 3rem;
+            opacity: 0;
+            animation: fadeInUp 1.4s ease-out 0.8s forwards;
+        }
+
+        .company-logo {
+            max-height: 60px;
+            max-width: 200px;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+            opacity: 0.8;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .company-logo:hover {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        .highlight {
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+            position: relative;
+        }
+
+        .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-accent);
+            border-radius: 2px;
+            opacity: 0.3;
+        }
+
+        /* Video Section */
+        .video-section {
+            padding: 8rem 0;
+            background: var(--smoke);
+        }
+
+        .video-container {
+            background: var(--obsidian);
+            border-radius: 32px;
+            overflow: hidden;
+            box-shadow: var(--shadow-luxury);
+            position: relative;
+            aspect-ratio: 16/9;
+            max-width: 1000px;
+            margin: 0 auto;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 0.7s forwards;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .video-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--platinum);
+            font-size: 1.25rem;
+            font-weight: 500;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            border: 2px solid var(--glass-border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .play-button:hover {
+            transform: translate(-50%, -50%) scale(1.1);
+            background: rgba(255, 107, 53, 0.2);
+            border-color: var(--accent);
+        }
+
+        .play-icon {
+            width: 0;
+            height: 0;
+            border-left: 28px solid var(--accent);
+            border-top: 16px solid transparent;
+            border-bottom: 16px solid transparent;
+            margin-left: 6px;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 8rem 0;
+            position: relative;
+        }
+
+        .section-alt {
+            background: var(--pearl);
+        }
+
+        .section-title {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 4rem;
+            color: var(--text-primary);
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+        }
+
+        .section-subtitle {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 3rem;
+            text-align: center;
+            letter-spacing: -0.01em;
+        }
+
+        /* Business Understanding Section */
+        .business-header {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .business-image {
+            max-width: 300px;
+            opacity: 0.9;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .business-image:hover {
+            opacity: 1;
+            transform: scale(1.02);
+        }
+
+        .business-img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid rgba(26, 26, 26, 0.08);
+        }
+
+        .business-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 5rem;
+        }
+
+        .problem-card {
+            background: var(--pearl);
+            padding: 3rem;
+            border-radius: 24px;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid rgba(26, 26, 26, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .problem-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: var(--gradient-accent);
+        }
+
+        .problem-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+            border-color: var(--accent);
+        }
+
+        .problem-number {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-accent);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .problem-card:hover .problem-number {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+        }
+
+        .problem-card p {
+            font-size: 1.125rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+
+
+        .solution-card {
+            background: var(--pearl);
+            padding: 4rem;
+            border-radius: 32px;
+            box-shadow: var(--shadow-soft);
+            margin: 3rem auto;
+            max-width: 900px;
+            border: 1px solid rgba(26, 26, 26, 0.05);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .solution-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: var(--gradient-accent);
+        }
+
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+            border-color: var(--accent);
+        }
+
+        .solution-card p {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+
+        /* Profile Section */
+        .profile-section {
+            background: var(--obsidian);
+            color: white;
+            padding: 10rem 0;
+            position: relative;
+        }
+
+        .profile-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 30% 40%, rgba(99, 102, 241, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 70% 60%, rgba(139, 92, 246, 0.03) 0%, transparent 50%);
+        }
+
+        .profile-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 6rem;
+            align-items: center;
+            margin-bottom: 6rem;
+        }
+
+        .profile-image {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: var(--gradient-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            font-weight: 800;
+            color: white;
+            margin: 0 auto;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+            border: 6px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+        }
+
+        .story-content h3 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .story-content h4 {
+            font-size: 1.75rem;
+            margin-bottom: 3rem;
+            color: var(--platinum);
+            font-weight: 500;
+        }
+
+        .story-timeline {
+            position: relative;
+            padding-left: 3rem;
+        }
+
+        .story-timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--gradient-accent);
+            border-radius: 2px;
+        }
+
+        .story-item {
+            position: relative;
+            margin-bottom: 3rem;
+            padding-left: 2rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .story-item:hover {
+            transform: translateX(10px);
+        }
+
+        .story-item::before {
+            content: '';
+            position: absolute;
+            left: -1.25rem;
+            top: 0.5rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            background: var(--accent);
+            border-radius: 50%;
+            box-shadow: 0 0 0 6px var(--obsidian);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .story-item:hover::before {
+            transform: scale(1.2);
+            box-shadow: 0 0 0 8px var(--obsidian), 0 0 20px rgba(99, 102, 241, 0.4);
+        }
+
+        .story-period {
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 0.75rem;
+            font-size: 1.125rem;
+        }
+
+        .story-description {
+            color: var(--platinum);
+            line-height: 1.8;
+            font-size: 1.125rem;
+            opacity: 0.9;
+        }
+
+        /* Skills Section */
+        .skills-title {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+
+        .skill-card {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            padding: 3rem;
+            border-radius: 24px;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.05));
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .skill-card:hover::before {
+            opacity: 1;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--accent);
+        }
+
+        .skill-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .skill-title {
+            font-weight: 700;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        .skill-description {
+            color: var(--platinum);
+            font-size: 1rem;
+            line-height: 1.6;
+            opacity: 0.8;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--gradient-luxury);
+            padding: 10rem 0;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 25% 25%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(139, 92, 246, 0.08) 0%, transparent 50%);
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-title {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 800;
+            margin-bottom: 2rem;
+            letter-spacing: -0.02em;
+        }
+
+        .cta-subtitle {
+            font-size: 1.375rem;
+            opacity: 0.9;
+            margin-bottom: 3rem;
+            color: var(--platinum);
+            font-weight: 300;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+        }
+
+        .btn {
+            padding: 1.25rem 2.5rem;
+            border-radius: 60px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid transparent;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.125rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary {
+            background: var(--gradient-accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-light);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border-color: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(180deg); }
+        }
+
+        /* Scroll Animations */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .scroll-reveal-stagger {
+            transition-delay: 0.2s;
+        }
+
+        .scroll-reveal-stagger:nth-child(2) {
+            transition-delay: 0.4s;
+        }
+
+        .scroll-reveal-stagger:nth-child(3) {
+            transition-delay: 0.6s;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            .profile-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                text-align: center;
+            }
+
+            .profile-image {
+                width: 280px;
+                height: 280px;
+                font-size: 4rem;
+            }
+
+            .story-timeline {
+                padding-left: 2rem;
+            }
+
+            .story-item {
+                padding-left: 1.5rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 320px;
+                justify-content: center;
+            }
+
+            .business-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .business-header {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+
+            .business-image {
+                max-width: 250px;
+                margin: 0 auto;
+            }
+
+            @media (max-width: 768px) {
+                .scroll-indicator {
+                    bottom: 1.5rem;
+                }
+
+                .scroll-text {
+                    font-size: 0.75rem;
+                }
+
+                .scroll-arrow {
+                    height: 3rem;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Oualid's <span class="highlight">application</span><br>
+                    for the position of <span class="highlight">Business Development Representative</span><br>
+                    at <span class="highlight">Shippypro</span>
+                </h1>
+                <p class="hero-subtitle">
+                    A personalized and methodical approach to apply
+                </p>
+                <div class="logo-container"></div>
+                
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator" onclick="scrollToNext()">
+                    <div class="scroll-text">Learn more below</div>
+                    <div class="scroll-arrow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="video-container">
+          <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+            <iframe 
+              src="https://www.loom.com/embed/92e5d6f09ba74a2180bda7fc0266bcd7?sid=32ec9cfd-e079-4975-949c-ee07965f53ea" 
+              frameborder="0" 
+              webkitallowfullscreen 
+              mozallowfullscreen 
+              allowfullscreen 
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+            </iframe>
+          </div>
+        </div>
+    </section>
+
+
+    <!-- Business Understanding Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="business-header scroll-reveal">
+                <div>
+                    <h2 class="section-title">What I understood about your business</h2>
+                </div>
+                <div class="business-image"></div>
+            </div>
+            
+            <h3 class="section-subtitle scroll-reveal">Challenges you solve for your customers</h3>
+            
+            <div class="business-grid">
+                <div class="problem-card scroll-reveal scroll-reveal-stagger">
+                    <div class="problem-number">1</div>
+                    <p>Connecting to many carriers is slow and complex.</p>
+                </div>
+                <div class="problem-card scroll-reveal scroll-reveal-stagger">
+                    <div class="problem-number">2</div>
+                    <p>Shipping takes too much time and costs too much.</p>
+                </div>
+                <div class="problem-card scroll-reveal scroll-reveal-stagger">
+                    <div class="problem-number">3</div>
+                    <p>Customers can’t track parcels easily and returns are messy.</p>
+                </div>
+            </div>
+
+            <h3 class="section-subtitle scroll-reveal">How you solve those challenges</h3>
+            <div class="solution-card scroll-reveal">
+                <p>ShippyPro makes shipping way easier for e-commerce brands. You plug it into all your carriers and sales channels super fast, no tech headaches. It handles the boring stuff—comparing rates, printing labels, tracking orders—so your team saves hours every week.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-content">
+                <h2 class="section-title">My Profile</h2>
+                
+                <div class="profile-grid scroll-reveal">
+                    <div class="profile-image">
+                     <img src="https://media.licdn.com/dms/image/v2/D4E03AQEAwIPIFhAaeA/profile-displayphoto-shrink_800_800/B4EZX22.0qHcAc-/0/1743603363983?e=1755734400&v=beta&t=7-HtzmlscR4m-z0FaoPoGpyieKWo23LsJMOy0Jr89D0" alt="Photo de Oualid" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                   </div>
+                    <div class="story-content">
+                        <h3>My Story</h3>
+                        <h4>My journey in 5 acts</h4>
+                        
+                        <div class="story-timeline">
+                            <div class="story-item">
+                                <div class="story-period">Engineering School (2017–2022)</div>
+                                <div class="story-description">I learned how to model complex systems. To find structured solutions.</div>
+                            </div>
+                            <div class="story-item">
+                                <div class="story-period">Consulting (2022–2025)</div>
+                                <div class="story-description">I advised large corporations. I listened, analyzed, configured. But I wasn’t passionate.</div>
+                            </div>
+                            <div class="story-item">
+                                <div class="story-period">The Trigger (2025)</div>
+                                <div class="story-description">I asked myself a simple question: what excites me? B2B Sales.</div>
+                            </div>
+                            <div class="story-item">
+                                <div class="story-period">Sales Bootcamp – Akimbo (2025)</div>
+                                <div class="story-description">Over 300 cold calls and personalized emails with qualified meetings. BEBEDC / MEDDIC methods and multichannel sequences. I learned to sell with structure.</div>
+                            </div>
+                            <div class="story-item">
+                                <div class="story-period">Today</div>
+                                <div class="story-description">Committed to help <strong>Shippypro</strong> move forward with determination.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="skills-title">What I can bring to Shippypro</h3>
+
+                <div class="skills-grid">
+                    <div class="skill-card scroll-reveal scroll-reveal-stagger">
+                        <div class="skill-icon">🎨</div>
+                        <div class="skill-title">Creativity</div>
+                        <div class="skill-description">Innovative sales approaches and creative adaptation to customer needs</div>
+                    </div>
+                    <div class="skill-card scroll-reveal scroll-reveal-stagger">
+                        <div class="skill-icon">📈</div>
+                        <div class="skill-title">Business/Sales Knowledge</div>
+                        <div class="skill-description">Solid grasp of modern sales methods and strong business awareness</div>
+                    </div>
+                    <div class="skill-card scroll-reveal scroll-reveal-stagger">
+                        <div class="skill-icon">⚡</div>
+                        <div class="skill-title">Technical & Tools</div>
+                        <div class="skill-description">Engineering background and technical expertise in next-gen sales tools</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Let’s build the future together</h2>
+                <p class="cta-subtitle">
+                    I’m confident my profile can bring real value to Shippypro
+                </p>
+                
+                <div class="cta-buttons">
+                    <a href="mailto:oualidb12@gmail.com?subject=Oualid's%20application%20for%20Business Development Representative%20at%20Shippypro&body=Hi%20Oualid,%0D%0A%0D%0AI%20reviewed%20your%20application%20for%20the%20Business Development Representative%20position%20at%20Shippypro%20and%20really%20liked%20it.%20Here%20are%20my%20availabilities:%0D%0A%0D%0A" class="btn btn-primary">
+                        ✉️ Let’s Start a Conversation
+                    </a>
+                    <a href="https://www.canva.com/design/DAGucur9eWM/-kuMP7Og69zck3EMPECYEQ/edit?utm_content=DAGucur9eWM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" rel="noopener" class="btn btn-secondary">
+                        📄 View My Resume
+                    </a>
+                    <a href="tel:+337897840" class="btn btn-secondary">
+                        📞 Let's Chat Directly
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // ==========================================
+        // VARIABLES DE PERSONNALISATION
+        // ==========================================
+        // Modifiez uniquement ces variables pour personnaliser votre landing page
+        
+        const VARIABLES = {
+            // Informations personnelles
+            NOM: "Oualid",
+            INITIALE: "OBMS",
+            EMAIL: "oualidb12@gmail.com",
+            TELEPHONE: "+33783978450",
+            
+            // Informations de candidature
+            POSTE: "Business Development Representative",
+            ENTREPRISE: "Shippypro",
+            LOGO_ENTREPRISE: "https://cdn.shopify.com/app-store/listing_images/1c6077b8ccdfa141de17eae309985b46/icon/CNzGma7qkfsCEAE=.jpeg", // URL du logo de l'entreprise
+            IMAGE_ENTREPRISE: "{{Entreprise image}}", // URL de l'image business
+            
+            // Compréhension du business
+            PROBLEMATIQUE_1: "Connecting to many carriers is slow and complex.",
+            PROBLEMATIQUE_2: "Shipping takes too much time and costs too much.",
+            PROBLEMATIQUE_3: "Customers can’t track parcels easily and returns are messy.",
+            SOLUTION: "ShippyPro makes shipping way easier for e-commerce brands. You plug it into all your carriers and sales channels super fast, no tech headaches. It handles the boring stuff—comparing rates, printing labels, tracking orders—so your team saves hours every week.",
+            
+            // Liens externes
+            LIEN_VIDEO: "https://www.loom.com/share/92e5d6f09ba74a2180bda7fc0266bcd7?sid=386fd4df-fb29-4e1c-ad9c-f84eebe394e3", // Remplacez par votre lien vidéo
+            LIEN_CV: "https://www.canva.com/design/DAGucur9eWM/-kuMP7Og69zck3EMPECYEQ/edit?utm_content=DAGucur9eWM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" // Remplacez par votre lien CV
+        };
+        
+        // ==========================================
+        // FONCTIONS D'INITIALISATION
+        // ==========================================
+        
+        // Fonction pour remplacer les variables dans le HTML
+        function initializeVariables() {
+            // Remplacer le titre principal
+            document.title = `${VARIABLES.NOM}'s application - ${VARIABLES.POSTE} at ${VARIABLES.ENTREPRISE}`;
+            
+            // Remplacer dans le hero
+            const heroTitle = document.querySelector('.hero-title');
+            if (heroTitle) {
+                heroTitle.innerHTML = `
+                    <span class="highlight">${VARIABLES.NOM}</span>'s <span class="highlight">application</span><br>
+                    for the position of <span class="highlight">${VARIABLES.POSTE}</span><br>at <span class="highlight">${VARIABLES.ENTREPRISE}</span>
+            `;
+            }
+            
+            const heroSubtitle = document.querySelector('.hero-subtitle');
+            if (heroSubtitle) {
+                heroSubtitle.innerHTML = `A personalized and methodical approach to apply`;
+            }
+            
+            // Ajouter le logo de l'entreprise
+            const logoContainer = document.querySelector('.logo-container');
+            if (logoContainer && VARIABLES.LOGO_ENTREPRISE && VARIABLES.LOGO_ENTREPRISE !== "https://cdn.shopify.com/app-store/listing_images/1c6077b8ccdfa141de17eae309985b46/icon/CNzGma7qkfsCEAE=.jpeg") {
+                logoContainer.innerHTML = `<img src="${VARIABLES.LOGO_ENTREPRISE}" alt="Logo ${VARIABLES.ENTREPRISE}" class="company-logo">`;
+            }
+            
+            // Ajouter l'image business
+            const businessImage = document.querySelector('.business-image');
+            if (businessImage && VARIABLES.IMAGE_ENTREPRISE && VARIABLES.IMAGE_ENTREPRISE !== "{{Entreprise image}}") {
+                businessImage.innerHTML = `<img src="${VARIABLES.IMAGE_ENTREPRISE}" alt="Business ${VARIABLES.ENTREPRISE}" class="business-img">`;
+            }
+            
+            // Remplacer dans la vidéo
+            const videoPlaceholder = document.querySelector('.video-placeholder div');
+            if (videoPlaceholder) {
+                videoPlaceholder.innerHTML = `
+                    Vidéo personnalisée pour ${VARIABLES.ENTREPRISE}<br>
+                    <small style="opacity: 0.7; font-size: 1rem;">Cliquez pour découvrir mon message</small>
+                `;
+            }
+            
+            // Remplacer les problématiques
+            const problemCards = document.querySelectorAll('.problem-card p');
+            if (problemCards.length >= 3) {
+                problemCards[0].textContent = VARIABLES.PROBLEMATIQUE_1;
+                problemCards[1].textContent = VARIABLES.PROBLEMATIQUE_2;
+                problemCards[2].textContent = VARIABLES.PROBLEMATIQUE_3;
+            }
+            
+            // Remplacer la solution
+            const solutionCard = document.querySelector('.solution-card p');
+            if (solutionCard) {
+                solutionCard.textContent = VARIABLES.SOLUTION;
+            }
+
+            // Remplacer dans les skills
+            const skillsTitle = document.querySelector('.skills-title');
+            if (skillsTitle) {
+                skillsTitle.innerHTML = `What I can bring to ${VARIABLES.ENTREPRISE}`;
+            }
+            
+            // Remplacer dans la CTA
+            const ctaSubtitle = document.querySelector('.cta-subtitle');
+            if (ctaSubtitle) {
+                ctaSubtitle.innerHTML = `Je suis convaincu que mon profil peut apporter une réelle valeur ajoutée à ${VARIABLES.ENTREPRISE}`;
+            }
+            
+            // Remplacer les liens
+            const emailLink = document.querySelector('a[href^="mailto"]');
+            if (emailLink) {
+                emailLink.href = `mailto:${VARIABLES.EMAIL}?subject=${VARIABLES.NOM}'s%20application%20for%20${VARIABLES.POSTE}%20at%20${VARIABLES.ENTREPRISE}&body=Hi%20${VARIABLES.NOM},%0D%0A%0D%0AI%20reviewed%20your%20application%20for%20the%20${VARIABLES.POSTE}%20position%20at%20${VARIABLES.ENTREPRISE}.%0D%0A%0D%0A`;
+
+            }
+            
+            const phoneLink = document.querySelector('a[href^="tel"]');
+            if (phoneLink) {
+                phoneLink.href = `tel:${VARIABLES.TELEPHONE}`;
+            }
+        }
+        
+        // ==========================================
+        // FONCTIONS PRINCIPALES
+        // ==========================================
+        
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -80px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Scroll to next section function
+        function scrollToNext() {
+            const nextSection = document.querySelector('.video-section');
+            if (nextSection) {
+                nextSection.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+        function playVideo() {
+            if (VARIABLES.LIEN_VIDEO && VARIABLES.LIEN_VIDEO !== "https://loom.com/votre-video") {
+                window.open(VARIABLES.LIEN_VIDEO, '_blank');
+            } else {
+                alert('Intégrez ici votre vidéo personnalisée (Loom, YouTube, Vimeo, etc.)');
+            }
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Dynamic text animation
+        function animateText() {
+            const highlights = document.querySelectorAll('.highlight');
+            highlights.forEach((highlight, index) => {
+                setTimeout(() => {
+                    highlight.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                }, index * 200);
+            });
+        }
+
+        // Initialize animations
+        window.addEventListener('load', () => {
+            initializeVariables();
+            animateText();
+        });
+    </script>
+</body>
+</html>
